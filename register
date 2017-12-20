@@ -1,0 +1,70 @@
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Sign Up Form</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<h1>Sign Up for Free</h1>
+	</head>
+	<body bgcolor="#009688">
+	<?php 
+
+	//connect Database
+	$db = mysqli_connect('localhost','root','', 'projectead');
+	//Create
+			
+	if(isset ($_POST['create-acc'])){
+			$fname = $_POST['firstname'];
+			$lname = $_POST['lastname'];
+			$user = $_POST['username'];
+			$pass = $_POST['password'];
+			$email = $_POST['email'];
+			$tl = $_POST['tempatLahir'];
+			$tl1 = $_POST['tanggalLahir'];
+		if(empty($fname) || empty($lname) || empty($user) || empty($pass) || empty($email) || empty($tl) || empty($tl1)){
+				echo "<script type='text/javascript'>alert('Please fill all the data');</script>";
+		}else{
+
+			if(strlen($user) < 6 || strlen($user) > 10 && strlen($pass) < 6 || strlen($pass) > 10){	
+				echo "<script type='text/javascript'>alert('Username and Password not Valid');</script>";
+			}else{
+				$queryR = mysqli_query($db, "SELECT username FROM usercba WHERE username = '$user'");
+			  if ($row = mysqli_fetch_array($queryR)){
+				echo "<script type='text/javascript'>alert('Username already taken.');</script>";
+			  }else{
+				$queryC = "INSERT INTO usercba (username,password,email,firstname,lastname,tempatLahir,tanggalLahir) VALUES('$user','$pass','$email','$fname','$lname','$tl','$tl1')";
+				mysqli_query($db, $queryC);
+				echo "<script type='text/javascript'>alert('Register Successfull');</script>";
+			}
+			
+		
+			}
+		 }
+	  }
+		 
+?>
+	 
+<form method="post" action="index.php">
+	<div class = "inputan">
+			<input type="text" name="firstname" value = "" placeholder="First Name"> <input type="text" name="lastname" value = "" placeholder="Last Name"> </p>
+			<input type="text" name="tempatLahir" value="" placeholder="Tempat Tanggal Lahir"> <input type="date" name="tanggalLahir"></p>
+		</div>
+		<div class="user">
+			<input type="text" name="username" value = "" placeholder="Username here..."> </p>
+			<input type="password" name="password" value = "" placeholder="Password here..."></p>
+			<input type="text" name="email" value="" placeholder="e-mail address"></p>
+			
+			<div class = "submit">
+				<button type="submit" name="create-acc" class="signup">Sign Up</button>
+
+			</div>
+
+	</div>	 		
+</form>
+			<div class = "pindah">
+				<a href="signin.php">Already Have an Account? Sign In here.</a>
+			</div>
+
+
+	</body>
+	</html>
+	
