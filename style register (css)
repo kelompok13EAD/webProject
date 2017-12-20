@@ -1,0 +1,66 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: dosis;
+	color: #009688;
+
+
+}
+h1{
+	text-align: center;
+	font-size: 30px;
+	font-weight: 300;
+	color: #fff;
+	margin-bottom: 10px;
+}
+form{
+	width: 50%;
+	margin:12px auto;
+	text-align: left;
+	padding: 20px;
+	border: 1px solid #bbbbbb;
+	border-radius: 5px;
+}
+.inputan{
+	margin: 10px 0px 10px 0px;
+}
+.inputan input{
+	height: 45px;
+	width: 45%;
+	padding: 5px 10px;
+	font-size: 16px;
+	border-radius: 5px;
+	border: 1px solid gray;
+}
+.user input {
+	height: 45px;
+	width: 94%;
+	padding: 5px 10px;
+	font-size: 16px;
+	border-radius: 5px;
+	border: 1px solid gray;
+}
+.submit button{
+	color: white;
+	height: 45px;
+	width: 97%;
+	padding: 5px 10px;
+	font-size: 16px;
+	border-radius: 5px;
+	border: 1px solid gray;
+	background: #ff9a00;
+}
+.submit button:hover{
+	color: white;
+	background: #b27518;
+	cursor: pointer;
+}
+.pindah a{
+	color: white;
+ 	height: 100px;
+    width: 400px;
+    position: fixed;
+    top: 92%;
+    left: 55%;
+    margin-top: -100px;
+    margin-left: -200px;
