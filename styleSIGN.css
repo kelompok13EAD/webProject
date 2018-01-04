@@ -1,0 +1,61 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: dosis;
+	color: #498fff;
+	background-color: #498fff;
+
+
+}
+h1{
+	text-align: center;
+	font-size: 30px;
+	font-weight: 300;
+	color: #fff;
+	margin-bottom: 10px;
+}
+form{
+	width: 30%;
+	height: 300px;
+	margin:12px auto;
+	text-align: left;
+	padding: 20px;
+	border: 1px solid;#f2f3f4
+	border-radius: 5px;
+	background-color: white;
+}
+.inputan{
+	margin: 10px 0px 10px 0px;
+}
+.s input {
+	height: 45px;
+	width: 97%;
+	padding: 5px 10px;
+	font-size: 16px;
+	border-radius: 5px;
+	border: 1px solid gray;
+}
+.s h3{
+	text-align: center;
+	font-size: x-large;
+}
+.s .submit{
+	color: white;
+	height: 45px;
+	width: 103%;
+	padding: 5px 10px;
+	font-size: 16px;
+	border-radius: 5px;
+	border: 1px solid gray;
+	background: #ff9a00;
+}
+.s .submit:hover{
+	color: white;
+	background: #b27518;
+	cursor: pointer;
+}
+.s a{
+	text-decoration: none;
+	color:  #498fff;
+	margin-left: 5%;
+	position: fixed;

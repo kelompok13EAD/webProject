@@ -1,0 +1,265 @@
+body, html{
+  height:100%;
+  margin:0;
+  font-size:16px;
+  font-family:"dosis", sans-serif;
+  font-weight:400;
+  line-height:1.8em;
+  color:#666;
+}
+.menu.cover.ourService.developer.socMed{
+  position:relative;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+/* MENU CSS*/
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #498fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.menu li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover{
+  background-color: #4e77ba;
+}
+.menu .switch{
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+
+}
+.menu .switch input{
+  display: none;
+}
+.slider .round{
+  border-radius: 34px;
+}
+
+.slider .round:before{
+  border-radius: 50%;
+}
+/* END MENU CSS*/
+
+/* COVER CSS*/
+.cover{
+  padding: 50px;
+  min-height: 70%;
+}
+.cover h1{
+  margin-top: 90px;
+  color: #498fff;
+  text-align: center;
+  font-size: 100px;
+}
+.cover p{
+  color: #498fff;
+  text-align: center;
+  font-size: 35px;
+}
+/* END COVER CSS*/
+
+/* OUR SERVICE CSS*/
+.ourService{
+  background-color: #498fff;
+  min-height: 65%;
+}
+.ourService h2{
+  position: relative;
+  top: 60px;
+  color: white;
+  text-align: center;
+}
+.ourService form{
+  margin-top: 100px;
+  margin-left: 460px;
+  width: 250px;
+  padding: 20px;
+  border: 3px solid;
+  border-color: white;
+  border-radius: 22px;
+}
+.ourService img{
+  margin-left: 40px;
+}
+.ourService label{
+  color:  white;
+  font-size: 20px;
+  margin-left: 65px;
+}
+.ourService .ca{
+   margin-left: 40px;
+}
+.ourService .sbm{
+  text-decoration: none;
+  font-family: dosis;
+  color: #498fff;
+  background-color: white;
+  border-radius: 5px;
+  margin-left: 57px;
+  border-radius: 7px;
+  padding: 5px 15px;
+}
+.ourService .sbm:hover{
+  background: #4e77ba;
+  color: white;
+
+}
+.ourService .sbm1{
+  text-decoration: none;
+  font-family: dosis;
+  color: #498fff;
+  background-color: white;
+  border-radius: 5px;
+  margin-left: 81px;
+  border-radius: 7px;
+  padding: 5px 15px;
+}
+.ourService .sbm1:hover{
+  background: #4e77ba;
+  color: white;
+
+}
+.ourService .btn-left {
+ font-family: dosis;
+ color: #498fff;
+ background-color: white;
+ border-radius: 5px;
+ margin-left: 377px;
+ border-radius: 7px;
+ padding: 5px 15px;
+ position: relative;
+ top: -170px;
+}
+.ourService .btn-right{
+ font-family: dosis;
+ color: #498fff;
+ background-color: white;
+ border-radius: 5px;
+ margin-left: 380px;
+ border-radius: 7px;
+ padding: 5px 15px;
+ position: relative;
+ top: -170px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 50px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  background-color: #23a9ce;
+}
+
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+.popup h3 {
+    margin-top: 0;
+    color: white;
+    font-family: dosis;
+    float: center;
+}
+
+.popup .close:hover {
+    color: #06D85F;
+}
+.popup .content h3{
+  color: white;
+  text-align: center;
+}
+.popup .content p{
+  color: white;
+  text-align: center;
+}
+.popup .content form{
+  color: white;
+  position: relative;
+  top: 10px;
+
+}
+.popup .content .p{
+  color: white;
+}
+.popup .content .btn{
+  color: white;
+  height: 20px;
+  width: 101%;
+  padding: 5px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  background: #ff9a00;
+}
+.pop .content .text{
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+/* END OUR SERVICE CSS*/
+
+/* DEVELOPER CSS*/
+.developer{
+
+  min-height: 40%;
+}
+/* END DEVELOPER CSS*/
+
+/* SOCIAL MEDIA CSS*/
+.socMed{
+  min-height: 20%;
+}
+.socMed h2{
+  text-align: center;
+  color: #498fff;
+}
+.socMed a{
+  position: relative;
+  left: 550px;
+}
+/* END SOCIAL MEDIA CSS*/

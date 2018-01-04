@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Welcome !</title>
+	<link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body>
+	<section class="menu">
+		<ul>
+			<li><a href="profileForm.php">PROFILE</a></li>
+			<li><a href="#logout">LOGOUT</a></li>
+		</ul>
+	</section>
+	<section class="m-os" id="isi">
+		<h2>OUR SERVICE</h2>
+
+		<a href = "#lapsit">
+			<img src="toa2.png" id="toa">
+			<h3>Lapor Situasi</h3>
+
+		</a>
+		<a href = "#smp" id="Pb">
+			<img src="toa2.png" id="toa">
+			<h3>Clean City</h3>
+		</a>
+		<a href = "" id="cs">
+			<img src="toa2.png" id="toa">
+			<h3>City Announcement</h3>
+		</a>
+	</section>
+	<section class="fb" id="isi">
+		<form action="feedback.php" method="post">
+			<textarea cols="50" rows="6" placeholder="Isi Laporan Disini" name="lapor" class="text"></textarea><br>
+			<input type="submit" name="submit" value="LAPOR" class="btn" />
+		</form>
+	</section>
+	<div id="lapsit" class="overlay">
+		<div class="popup">
+			<h2>LAPOR DISINI :)</h2>
+			<a class="close" href="">x</a>
+			<div class="content">
+				<form action="upload.php" method="post" enctype="multipart/form-data" >
+					<textarea cols="50" rows="6" placeholder="Isi Laporan Disini" name="lapor" class="text"></textarea><br>
+					<input type="text" name="loc" placeholder="Lokasi" class="text"><br>
+					Select image to upload:
+					<input type="file" name="image" class="p" /><br>
+					<input type="submit" name="submit" value="LAPOR" class="btn" />
+				</form>
+			</div>
+			
+		</div>
+	</div>
+	<div id="logout" class="overlay">
+		<div class="popup">
+			<a class="close" href="">x</a>
+			<div class="content">							
+				<form action="logout.php" method = "post" class = "isi"  >
+					<h1>Are you Sure you want to log out?</h1>
+					<input type="submit" name="yes" value="yes">
+					<input type="submit" name="no" value="no">	
+				</form>
+			</div>
+			
+		</div>
+	</div>
+	<div id="smp" class="overlay1">
+		<div class="popup1">
+			<h2>Clean City</h2>
+			<a class="close1" href="">x</a>
+			<div class="content1">
+				<form action="upload1.php" method="post" enctype="multipart/form-data">
+					<div class="isian">
+						Jumlah kilogram :
+						<input type="number" name="jml" class="number"> kg<br>
+						Tempat penjemputan :
+						<input type="text" name="loc1" class="loc"><br>
+						Nomor Handphone : 
+						<input type="text" name="hp" class="hp"><br>
+						Jenis Sampah : <input type="checkbox" name="organik" class="jsmp">Organik<br>
+						<input type="checkbox" name="anorganik" class="jsmp1">Anorganik
+					</div>
+					<input type="submit" name="submit1" value="READY TO PICK UP" class="btn1" />
+				</form>
+			</div>
+			
+		</div>
+	</div>
+</body>
+</html>

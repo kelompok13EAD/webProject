@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Welcome</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<!--menu-->
+	<section class="menu">
+		<ul>
+			<li><a href="">HOME</a></li>
+			<li><a href="#os">OUR SERVICE</a></li>
+			<li><a href="#sosmed">SOCIAL MEDIA</a></li>
+			<li><a href="signin.html">LOGIN</a></li>
+			<li><a href="" value = "">NIGHT MODE</a> 
+			</li>
+		</ul>
+	</section>
+	<!--end menu-->
+
+	<!--cover-->
+	<section class="cover">
+		<h1>MyCity</h1>
+		<p>FOR BETTER LIVING</p>
+	</section>
+	<!--end cover-->
+
+	<!--our service-->
+	<section class="ourService" id="os">
+		<h2>OUR SERVICE</h2>
+
+		<form class="mySlides">
+			<img src="toa2.png"><br>
+			<label>LAPOR SITUASI</label><br>
+			<a href="#lapsit" class="sbm">GET TO KNOW ME</a>
+		</form>
+		<div id="lapsit" class="overlay">
+			<div class="popup">
+				<a class="close" href="#os">x</a>
+				<div class="content">
+					<h3>LAPOR SITUASI/LAPSIT</h3>
+					<p>Lapsit adalah sebuah layanan unggulan kami yang melibatkan peran warga dengan pemerintah kota. layanan ini bertujuan untuk meningkatkan kesejahteraan masyarakat dengan cara melaporkan suatu kendala didalam kota (Contoh: Fasilitas Kota Rusak)</p>					
+					<a href="signin.html" class="sbm1">LOGIN TO USE OUR SEVICE</a>
+					
+				</div>
+
+			</div>
+		</div>
+		
+		<form class="mySlides">
+			<img src="toa2.png"><br>
+			<label class="ca">CITY ANNOUNCEMENT</label><br>
+			<a href="#caa" class="sbm">GET TO KNOW ME</a>
+		</form>
+		<div id="caa" class="overlay">
+			<div class="popup">
+				<a class="close" href="#os">x</a>
+				<div class="content">
+					<h3>CITY ANNOUNCMENT</h3>
+					<p>City Announcement adalah sebuah layanan kami yang bertujuan untuk mengumumkan sebuah informasi mengenai perkembangan kota (Contoh: Pengumuman Pemadaman Listrik)</p>
+					<a href="signin.html" class="sbm1">LOGIN TO USE OUR SEVICE</a>
+
+					
+				</div>
+
+			</div>
+		</div>
+
+		<button class="btn-left" onclick="plusDivs(-1)">&#10094;</button>
+		<button class="btn-right" onclick="plusDivs(1)">&#10095;</button>
+
+		<script>
+			var slideIndex = 1;
+			showDivs(slideIndex);
+
+			function plusDivs(n) {
+				showDivs(slideIndex += n);
+			}
+
+			function showDivs(n) {
+				var i;
+				var x = document.getElementsByClassName("mySlides");
+				if (n > x.length) {slideIndex = 1}    
+					if (n < 1) {slideIndex = x.length}
+						for (i = 0; i < x.length; i++) {
+							x[i].style.display = "none";  
+						}
+						x[slideIndex-1].style.display = "block";  
+					}
+				</script>
+				
+			</section>
+			<!--end our service-->
+
+			<!--social media-->
+			<section id = "sosmed"class="socMed">
+				<h2>FIND US ON: </h2>				
+				<a href="www.facebook.com" class="sosmed"><img src="fb.png"></a>
+				<a href="www.twitter.com" class="sosmed"><img src="twitter.png"></a>
+			</section>
+			<!--end social media-->
+		</body>
+		</html>

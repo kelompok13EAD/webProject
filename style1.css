@@ -1,0 +1,268 @@
+body, html{
+	height:100%;
+	margin:0;
+	font-size:16px;
+	font-family:dosis;
+	font-weight:400;
+	line-height:1.8em;
+	color:#666;
+
+}
+.menu a {
+	text-decoration: none;
+	color:  white;
+	font-size: large;
+	margin: 7px;
+}
+.menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #498fff;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.menu li {
+	float: left;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li a:hover{
+	background-color: #4e77ba;
+}
+.m-os{
+	margin-top: 100px;
+	background-color:white; 
+	height: 400px;
+}
+.m-os h2{
+	color: #23a9ce;
+	text-align: center;
+	font-size: xx-large;
+}
+.m-os h3{
+	margin-top: 10%;
+}
+.m-os img{
+	margin-left: 10%;
+}
+.m-os a{
+	color: #23a9ce;
+	text-decoration: none;
+	width: 33.120%;
+	height: 400px;
+	float: left;
+	text-align: center;
+	border: 1px solid #23a9ce;
+	font-size: x-large;
+	height: 300px;
+}
+.m-os a:hover{
+	color:white;
+	background-color: #23a9ce;
+	cursor: pointer;
+}
+.m-os .btn{
+	height: 20px;
+}
+
+.fb form{
+	
+}
+
+.overlay {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.7);
+	transition: opacity 500ms;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.overlay:target {
+	visibility: visible;
+	opacity: 1;
+}
+
+.popup {
+	margin: 100px auto;
+	padding: 50px;
+	background: #fff;
+	border-radius: 5px;
+	width: 30%;
+	position: relative;
+	background-color: #23a9ce;
+}
+
+.popup .close {
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	transition: all 200ms;
+	font-size: 30px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #333;
+}
+
+.popup h2 {
+	margin-top: 0;
+	color: white;
+	font-family: Tahoma, Arial, sans-serif;
+	float: center;
+}
+
+.popup .close:hover {
+	color: #06D85F;
+}
+.popup .content {
+	max-height: 30%;
+	overflow: auto;
+}
+.popup .content form{
+	color: white;
+	position: relative;
+	top: 10px;
+	height: 250px;
+
+}
+.popup .content .p{
+	color: white;
+}
+.popup .content .btn{
+	color: white;
+	height: 50px;
+	width: 95%;
+	padding: 5px 10px;
+	font-size: 16px;
+	border-radius: 5px;
+	border: 1px solid gray;
+	background: #ff9a00;
+	border-radius: 7px;
+}
+.popup .content .btn1{
+	color: white;
+	height: 40px;
+	width: 50%;
+	padding: 5px 10px;
+	font-size: 16px;
+	border-radius: 5px;
+	border: 1px solid gray;
+	background: #ff9a00;
+	border-radius: 7px;
+}
+.pop .content .text{
+	border-radius: 5px;
+	padding: 5px 5px;
+}
+
+/*Clean City*/
+
+.overlay1 {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.7);
+	transition: opacity 500ms;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.overlay1:target {
+	visibility: visible;
+	opacity: 1;
+}
+
+.popup1 {
+	margin: 100px auto;
+	padding: 50px;
+	background: #fff;
+	border-radius: 5px;
+	width: 30%;
+	position: relative;
+	background-color: #23a9ce;
+}
+
+.popup1 .close1 {
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	transition: all 200ms;
+	font-size: 30px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #333;
+}
+
+.popup1 h2 {
+	margin-top: 0;
+	color: white;
+	font-family: Tahoma, Arial, sans-serif;
+	float: center;
+}
+
+.popup1 .close1:hover {
+	color: #06D85F;
+}
+.popup1 .content1 {
+	max-height: 30%;
+	overflow: auto;
+}
+.popup1 .content1 form{
+	color: white;
+	position: relative;
+	top: 10px;
+	height: 190px;
+
+}
+.popup1 .content1 .p{
+	color: white;
+}
+.popup1 .content1 .btn1{
+	color: white;
+	height: 30px;
+	width: 46%;
+	padding: 5px 10px;
+	font-size: 16px;
+	border-radius: 5px;
+	border: 1px solid gray;
+	background: #ff9a00;
+	border-radius: 7px;
+	margin-left: 149px;
+}
+.popup1 .content1 .isian .number{
+	margin-left: 32px;
+	width: 10%;
+}
+.popup1 .content1 .isian .loc{
+	margin-left: 4px;
+	width: 45%;
+}
+.popup1 .content1 .isian .hp{
+	margin-left: 20px;
+	width: 45%;
+}
+.popup1 .content1 .isian .jsmp{
+	margin-left: 53px;
+}
+.popup1 .content1 .isian .jsmp1{
+	margin-left: 150px;
+}
+
+
+
